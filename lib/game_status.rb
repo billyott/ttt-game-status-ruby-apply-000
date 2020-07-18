@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
     [2,4,6]
   ]
 
-def won(board)
+def won?(board)
   output = []
   WIN_COMBINATIONS.each do |win_combination|
     moves = []
