@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
     [2,4,6]
   ]
 
+
 def won?(board)
   output = false
   WIN_COMBINATIONS.each do |win_combination|
@@ -68,6 +69,7 @@ def over?(board)
   end
   return output
 end
+
 
 def winner?(board)
   if won?(board) != false && 
