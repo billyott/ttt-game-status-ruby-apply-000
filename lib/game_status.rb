@@ -24,6 +24,8 @@ def won(board)
     end
     if moves[0] == "X" && moves[1] == "X" && moves[2] == "X" || moves[0] == "O" && moves[1] == "O" && moves[2] == "O"
       break
+    else
+      output = nil
     end
     output = win_combination
     break
