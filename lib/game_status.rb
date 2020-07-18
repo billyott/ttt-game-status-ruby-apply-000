@@ -77,7 +77,7 @@ def winner(board)
   if won_board != false
     win_array = []
     won_board.each do |board_index|
-      win_array << won_board[board_index]
+      win_array << board[board_index]
     end
     if win_array == ["X","X","X"]
       output = "X"
