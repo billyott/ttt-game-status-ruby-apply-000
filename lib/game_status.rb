@@ -26,7 +26,6 @@ def won?(board)
       output = win_combination
       break
     end
-    break
   end
   return output
 end
