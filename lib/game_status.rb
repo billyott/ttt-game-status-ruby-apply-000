@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
-  output = nil
+  output = false
   WIN_COMBINATIONS.each do |win_combination|
     moves = []
     win_combination.each do |board_index|
@@ -31,3 +31,15 @@ def won?(board)
 end
 
 
+def full?(board)
+  output = true
+  board.each do |board_index|
+    if board_index == " "
+      output = false
+      break
+    end
+  end
+  return output
+end
+    
+    
