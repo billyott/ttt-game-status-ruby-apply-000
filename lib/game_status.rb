@@ -42,4 +42,5 @@ def full?(board)
   return output
 end
     
-    
+def draw?(board)
+  
