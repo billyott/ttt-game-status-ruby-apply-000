@@ -56,4 +56,6 @@ def draw?(board)
   end
   return output
 end
-    
+
+
+def over?(board)
