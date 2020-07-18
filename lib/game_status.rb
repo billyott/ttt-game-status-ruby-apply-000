@@ -78,10 +78,12 @@ def winner(board)
     win_array = []
     board.each do |board_index|
       win_array << board[board_index]
+    end
     if win_arrya == ["X","X","X"]
       output = "X"
     else
       output = "O"
+    end
   end
   return output
 end
