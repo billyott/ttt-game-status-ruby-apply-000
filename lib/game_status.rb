@@ -21,6 +21,6 @@ def won(board)
     win_combination.each do |board_index|
       moves << board[board_index]
     if moves[0] == "X" && moves[1] == "X" && moves[2] == "X" || moves[0] == "O" && moves[1] == "O" && moves[2] == "O"
-    return
+    return 
 
 end
