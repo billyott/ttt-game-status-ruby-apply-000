@@ -73,8 +73,12 @@ end
 
 def winner?(board)
   output = false
-  if won?(board) != false
-    if won(board) == ["X","X","X"]
+  board = won?(board)
+  if board != false
+    win_array = []
+    board.each do |board_index|
+      win_array << board[board_index]
+    if win_arrya == ["X","X","X"]
       output = "X"
     else
       output = "O"
