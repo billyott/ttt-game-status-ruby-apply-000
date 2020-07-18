@@ -72,4 +72,12 @@ end
 
 
 def winner?(board)
-  if won?(board) != false && 
+  output = false
+  if won?(board) != false
+    if won(board) == ["X","X","X"]
+      output = "X"
+    else
+      output = "O"
+  end
+  return output
+end
